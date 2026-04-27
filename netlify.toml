@@ -1,10 +1,6 @@
 [build]
-  # هذا الأمر سيحاول بناء المشروع سواء كان في مجلد أو في الخارج
-  command = "if [ -d 'frontend' ]; then cd frontend && npm install && npm run build; else npm install && npm run build; fi"
-  # سيقوم بنشر مجلد dist سواء كان في الخارج أو داخل frontend
-  publish = "frontend/dist"
-  # إذا لم يجد frontend/dist سيجرب dist مباشرة
-  functions = "netlify/functions"
+  command = "npm run build"
+  publish = "dist"
 
 [[redirects]]
   from = "/*"
