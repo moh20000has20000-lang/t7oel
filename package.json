@@ -1,0 +1,9 @@
+{
+  "name": "nexdrop-monorepo",
+  "private": true,
+  "scripts": {
+    "build": "cd frontend && npm install && npm run build",
+    "frontend-install": "cd frontend && npm install",
+    "backend-install": "cd backend && npm install"
+  }
+}
